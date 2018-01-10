@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.macor.Intarfaces.HelloService;
 
-@Service(value = "saludaServiceJava")
+@Service(value = "saludaService")
 public class HelloServiceImpl implements HelloService, InitializingBean, DisposableBean {
 
 	@Override

@@ -16,10 +16,10 @@ public class Application {
 		AbstractApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfiguration.class);
 
 		for (String beanName : ctx.getBeanDefinitionNames()) {
-			System.out.println(":: " + beanName);
+			System.out.println("BEANS:: " + beanName);
 		}
 
-		HelloService saluda = ctx.getBean("saludaServiceJava", HelloService.class);
+		HelloService saluda = ctx.getBean("saludaService", HelloService.class);
 		saluda.saludar();
 
 		ctx.close();

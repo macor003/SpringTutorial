@@ -11,7 +11,7 @@ import com.macor.Intarfaces.HelloService;
 @ComponentScan("com.macor.Impl")
 public class SpringConfiguration {
 
-	@Bean(name = "saludaServiceJava")
+	@Bean(name = "saludaService")
 	public HelloService getSaludaService() {
 		return new HelloServiceImpl();
 	}
